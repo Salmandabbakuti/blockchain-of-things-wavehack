@@ -20,13 +20,13 @@ def setup_gpio_pins():
 
 def main():
     # Get RPC URL from environment variables
-    rpc_url = os.getenv("RPC_URL", "https://bsc-dataseed.bnbchain.org")
+    rpc_url = os.getenv("RPC_URL", "https://pacific-rpc.sepolia-testnet.manta.network/http")
     # Initialize web3.py instance
     w3 = Web3(HTTPProvider(rpc_url))
     
     # Load contract ABI and address
     abi = '{"anonymous": false, "inputs": [{"indexed": true, "internalType": "uint256", "name": "deviceId", "type": "uint256"}, {"indexed": true, "internalType": "uint8", "name": "pin", "type": "uint8"}, {"indexed": false, "internalType": "enum PinController.PinStatus", "name": "status", "type": "uint8"}], "name": "DevicePinStatusChanged", "type": "event"}'
-    contract_address = Web3.to_checksum_address(os.getenv("CONTRACT_ADDRESS", "0xf7A218961DA9187BB43171F69581b511876b4d96"))
+    contract_address = Web3.to_checksum_address(os.getenv("CONTRACT_ADDRESS", "0xd231fE46b4A8500d4aDD5AD98EC3c4ca56E7dee4"))
 
     # Initialize contract instance and event filter
     contract_instance = w3.eth.contract(address=contract_address, abi=abi)
