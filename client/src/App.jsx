@@ -296,7 +296,7 @@ function App() {
                 fontSize: "1.5em"
               }}
             >
-              DePIN Raspi Connect
+              DePIN Raspi Controller
             </p>
           </h1>
           <h2>
