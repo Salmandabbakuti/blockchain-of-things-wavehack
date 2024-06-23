@@ -1,12 +1,12 @@
-# DePIN Raspi Connect
+# DePIN Raspi Controller
 
-DePIN Raspi Connect is a Raspberry Pi-based IoT project designed for home automation with blockchain integration. The project allows users to control home devices securely and efficiently using blockchain technology, ensuring trust, security, and authentication among IoT devices.
+DePIN Raspi Controller is a Raspberry Pi-based IoT project designed for home automation with blockchain integration. The project allows users to control home devices securely and efficiently using blockchain technology, ensuring trust, security, and authentication among IoT devices.
 
-DePIN Raspi Connect leverages the power of Raspberry Pi's GPIO pins to control home devices while integrating blockchain technology for enhanced security and trust among connected devices. The project includes a smart contract system that stores and updates pin statuses with access control by the owner. When authorized users update pin statuses, the contract emits events with the respective device id, pin number and status. A Python listener then detects these events and updates the Raspberry Pi pins accordingly, simulating device control in a secure and decentralized manner.
+DePIN Raspi Controller leverages the power of Raspberry Pi's GPIO pins to control home devices while integrating blockchain technology for enhanced security and trust among connected devices. The project includes a smart contract system that stores and updates pin statuses with access control by the owner. When authorized users update pin statuses, the contract emits events with the respective device id, pin number and status. A Python listener then detects these events and updates the Raspberry Pi pins accordingly, simulating device control in a secure and decentralized manner.
 
 ### Architecture
 
-![Untitled Diagram drawio (1)](https://github.com/Salmandabbakuti/depin-bnb-hack/assets/29351207/7e1e5b3c-6a84-434b-9b17-cfbe6aaacdc4)
+![bot-architecture](https://github.com/Salmandabbakuti/blockchain-of-things-wavehack/assets/29351207/889aff2a-b68e-42d1-9c13-f492c887c61c)
 
 ## Getting Started
 
