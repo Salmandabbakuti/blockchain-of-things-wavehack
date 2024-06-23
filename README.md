@@ -4,6 +4,8 @@ DePIN Raspi Controller is a Raspberry Pi-based IoT project designed for home aut
 
 DePIN Raspi Controller leverages the power of Raspberry Pi's GPIO pins to control home devices while integrating blockchain technology for enhanced security and trust among connected devices. The project includes a smart contract system that stores and updates pin statuses with access control by the owner. When authorized users update pin statuses, the contract emits events with the respective device id, pin number and status. A Python listener then detects these events and updates the Raspberry Pi pins accordingly, simulating device control in a secure and decentralized manner.
 
+**Contract Address:** [0xd231fE46b4A8500d4aDD5AD98EC3c4ca56E7dee4](https://pacific-explorer.sepolia-testnet.manta.network/address/0xd231fE46b4A8500d4aDD5AD98EC3c4ca56E7dee4) Deployed on Manta SePolia Testnet
+
 ### Architecture
 
 ![bot-architecture](https://github.com/Salmandabbakuti/blockchain-of-things-wavehack/assets/29351207/889aff2a-b68e-42d1-9c13-f492c887c61c)
@@ -118,6 +120,8 @@ python listener.py
 ![Screen1](https://github.com/Salmandabbakuti/depin-bnb-hack/assets/29351207/d0900ce0-3b03-411f-97b8-f40d7aa8b627)
 
 ## Built With
+
+- [Manta Network](https://manta.network/) - A multi-modular blockchain ecosystem designed to support the development and deployment of zero-knowledge (ZK) applications. With low fees and high scalability, Manta Network is the perfect platform for building privacy-focused applications.
 
 - [Hardhat](https://hardhat.org/) - Ethereum development environment for compiling, testing, deploying, and interacting with smart contracts
 - [Solidity](https://docs.soliditylang.org/en/v0.8.24/) - Ethereum's smart contract programming language
