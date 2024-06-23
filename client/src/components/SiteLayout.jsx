@@ -26,7 +26,7 @@ export default function SiteLayout({ children }) {
             fontWeight: "bold"
           }}
         >
-          DePIN Raspi Connect
+          DePIN Raspi Controller
         </h3>
         <ConnectWallet
           theme={"light"} // light | dark
@@ -56,9 +56,10 @@ export default function SiteLayout({ children }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          ©{new Date().getFullYear()} Salman Dabbakuti. Powered by BNB Chain
+          ©{new Date().getFullYear()} Salman Dabbakuti. Powered by Manta Pacific
+          Chain
         </a>
-        <p style={{ fontSize: "12px" }}>v0.0.3</p>
+        <p style={{ fontSize: "12px" }}>v0.0.4</p>
       </Footer>
     </Layout>
   );

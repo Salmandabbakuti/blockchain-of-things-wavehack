@@ -22,7 +22,7 @@ import "./App.css";
 
 const contractAddress =
   import.meta.env.VITE_PIN_CONTROLLER_CONTRACT_ADDRESS ||
-  "0xf7A218961DA9187BB43171F69581b511876b4d96";
+  "0xd231fE46b4A8500d4aDD5AD98EC3c4ca56E7dee4";
 
 const contractABI = [
   "event DeviceRegistered(uint256 indexed deviceId, address indexed owner)",
@@ -296,7 +296,7 @@ function App() {
                 fontSize: "1.5em"
               }}
             >
-              DePIN Raspi Connect
+              DePIN Raspi Controller
             </p>
           </h1>
           <h2>

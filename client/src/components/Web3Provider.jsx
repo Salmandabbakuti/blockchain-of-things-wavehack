@@ -7,12 +7,7 @@ import {
   rainbowWallet,
   trustWallet
 } from "@thirdweb-dev/react";
-import {
-  Binance,
-  BinanceTestnet,
-  OpbnbTestnet,
-  Opbnb
-} from "@thirdweb-dev/chains";
+import { MantaPacific, MantaPacificSepoliaTestnet } from "@thirdweb-dev/chains";
 
 const supportedWallets = [
   metamaskWallet({ recommended: true }),
@@ -29,8 +24,8 @@ export default function Web3Provider({ children }) {
 
   return (
     <ThirdwebProvider
-      activeChain={Binance}
-      supportedChains={[Binance, BinanceTestnet, Opbnb, OpbnbTestnet]}
+      activeChain={MantaPacificSepoliaTestnet}
+      supportedChains={[MantaPacific, MantaPacificSepoliaTestnet]}
       supportedWallets={supportedWallets}
       autoConnect={true}
       clientId={clientId}
